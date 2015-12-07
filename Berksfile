@@ -4,6 +4,7 @@ Encoding.default_external = "UTF-8"
 
 source 'https://supermarket.chef.io'
 cookbook 'kagent', github: 'karamelchef/kagent-chef', branch: 'master'
-cookbook 'maven', github: 'chef-cookbooks/maven', branch: 'master'
 metadata
+
+cookbook "maven"
 
