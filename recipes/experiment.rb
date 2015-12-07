@@ -6,6 +6,13 @@ script 'run_experiment' do
   interpreter "bash"
   code <<-EOM
 echo "checkout HiBench repo"
+sudo apt-get install maven
+echo "maven installed"
+git "/tmp" do
+  repository "git://github.com/shelan/HiBench.git"
+  reference "master"
+  action :sync
+end
   EOM
 end
 
