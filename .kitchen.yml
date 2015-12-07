@@ -20,7 +20,6 @@ suites:
   - name: default
     run_list:
       - recipe[kagent::install]
-      - recipe[maven::default]
       - recipe[hibench::install]
       - recipe[hibench::experiment]
 
