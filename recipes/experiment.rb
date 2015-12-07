@@ -8,11 +8,12 @@ script 'run_experiment' do
 echo "checkout HiBench repo"
 sudo apt-get install maven
 echo "maven installed"
+  EOM
+end
+
 git "/tmp" do
   repository "git://github.com/shelan/HiBench.git"
   reference "master"
   action :sync
-end
-  EOM
 end
 
