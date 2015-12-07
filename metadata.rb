@@ -10,7 +10,6 @@ recipe            "hibench::experiment",  "configFile=; Experiment name: experim
 
 
 depends "kagent"
-depends "apt"
 depends "maven"
 
 %w{ ubuntu debian rhel centos }.each do |os|
