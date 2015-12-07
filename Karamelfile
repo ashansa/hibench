@@ -1,0 +1,8 @@
+dependencies:
+  - recipe: hibench::install
+  - recipe: hibench::experiment
+    local:
+      - hibench::install
+    global:
+
+
