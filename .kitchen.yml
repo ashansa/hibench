@@ -20,6 +20,7 @@ suites:
   - name: default
     run_list:
       - recipe[kagent::install]
+      - recipe[apt::default]
       - recipe[hibench::install]
       - recipe[hibench::experiment]
 
@@ -31,6 +32,9 @@ suites:
             private_ips: ["10.0.2.15"]
             public_ips: ["10.0.2.15"]
          kagent:
+            private_ips: ["10.0.2.15"]
+            public_ips: ["10.0.2.15"]
+          apt:
             private_ips: ["10.0.2.15"]
             public_ips: ["10.0.2.15"]
          private_ips: ["10.0.2.15"]
