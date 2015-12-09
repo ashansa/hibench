@@ -5,15 +5,19 @@ script 'run_experiment' do
   group node['hibench']['group']
   interpreter "bash"
   code <<-EOM
-echo "checkout HiBench repo"
-sudo apt-get install maven
-echo "maven installed"
+  cwd "/tmp/hibench"
+wget https://s3-eu-west-1.amazonaws.com/hibench-compiled-jar/HiBench.zip
+echo "downloaded hibench"
   EOM
 end
 
-git "/tmp" do
-  repository "git://github.com/shelan/HiBench.git"
-  reference "master"
-  action :sync
-end
+# echo "checkout HiBench repo"
+# sudo apt-get install maven
+# echo "maven installed"
+
+#git "/tmp" do
+ # repository "git://github.com/shelan/HiBench.git"
+  #reference "master"
+  #action :sync
+#end
 
