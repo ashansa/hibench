@@ -6,8 +6,10 @@ script 'run_experiment' do
   interpreter "bash"
   code <<-EOM
   cwd "/tmp/hibench"
+  echo "$(date)" > /home/vagrant/time.txt
 wget https://s3-eu-west-1.amazonaws.com/hibench-compiled-jar/HiBench.zip
 echo "downloaded hibench"
+echo "$(date)" > /home/vagrant/time2.txt
   EOM
 end
 
