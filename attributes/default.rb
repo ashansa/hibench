@@ -2,6 +2,7 @@
 # that the experiment will be excecuted as.
 default[:hibench][:group] = "hibench"
 default[:hibench][:user] = "hibench"
+default[:hibench][:home] = "/tmp/HiBench"
 default[:hibench][:map][:parallelism] = "2"
 default[:hibench][:shuffle][:parallelism] = "1"
 default[:hibench][:data][:scale] = "tiny"
