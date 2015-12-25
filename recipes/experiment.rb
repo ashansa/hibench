@@ -13,6 +13,20 @@ echo "$(date)" > /home/vagrant/time2.txt
   EOM
 end
 
+
+file "#{node[:hibench][:home]}/conf/99-user_defined_properties.conf" do 
+  owner node[:hibench][:user]
+  action :delete
+end
+
+
+template "#{node[:hibench][:home]}/conf/99-user_defined_properties.conf" do
+    source "99-user_defined_properties.conf.erb"
+    owner node[:hibench][:user]
+    group node[:hibench][:group]
+    mode 0775
+end
+
 # echo "checkout HiBench repo"
 # sudo apt-get install maven
 # echo "maven installed"
