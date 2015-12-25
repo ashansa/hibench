@@ -26,4 +26,52 @@ attribute "hibench/user",
 :description => "user parameter value",
 :type => "string"
 
+attribute "hibench/map/parallelism",
+:description => "parallelism for mapper",
+:type => "string"
+
+attribute "hibench/map/shuffle",
+:description => "parallelism for shuffle",
+:type => "string"
+
+attribute "hibench/data/scale",
+:description => "can be tiny, small, large, huge, gigantic, bigdata",
+:type => "string"
+
+attribute "hadoop/home",
+:description => "path to hadoop home",
+:type => "string"
+
+attribute "hadoop/master/url",
+:description => "hadoop master url",
+:type => "string"
+
+attribute "hadoop/MR/version",
+:description => "can be hadoop1 or hadoop2",
+:type => "string"
+
+attribute "spark/home",
+:description => "path to spark home",
+:type => "string"
+
+attribute "spark/master/url",
+:description => "spark master url",
+:type => "string"
+
+attribute "spark/version",
+:description => "can be spark1.2 or spark1.3",
+:type => "string"
+
+attribute "zookeeper/url",
+:description => "zookeeper url",
+:type => "string"
+
+attribute "kafka/home",
+:description => "path to kafka home",
+:type => "string"
+
+attribute "kafka/brokerList",
+:description => "kafka brokerList. Comma seperated host:port",
+:type => "string"
+
 
