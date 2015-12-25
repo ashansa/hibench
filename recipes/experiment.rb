@@ -20,12 +20,24 @@ file "#{node[:hibench][:home]}/conf/99-user_defined_properties.conf" do
   action :delete
 end
 
-
 template "#{node[:hibench][:home]}/conf/99-user_defined_properties.conf" do
     source "99-user_defined_properties.conf.erb"
     owner node[:hibench][:user]
     group node[:hibench][:group]
     mode 0775
+end
+
+script 'prepare' do
+  cwd "/tmp"
+  user node['hibench']['user']
+  group node['hibench']['group']
+  interpreter "bash"
+  code <<-EOM
+  cd #{node[:hibench][:home]}
+  ./workloads/streamingbench/prepare/initTopic.sh
+  ./workloads/streamingbench/prepare/genSeedDataset.sh
+  ./workloads/streamingbench/prepare/gendata.sh
+  EOM
 end
 
 # echo "checkout HiBench repo"
