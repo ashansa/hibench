@@ -3,6 +3,11 @@ dependencies:
   - recipe: hibench::experiment
     local:
       - hibench::install
-    global:
+  - recipe: hibench::gendata
+  - recipe: hibench::run-spark-streaming
+  	local:
+  	  - hibench::install
+  	  - hibench::experiment
+
 
 

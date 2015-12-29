@@ -23,6 +23,8 @@ suites:
       - recipe[apt::default]
       - recipe[hibench::install]
       - recipe[hibench::experiment]
+      - recipe[hibench::gendata]
+      - recipe[hibench::run-spark-streaming]
 
     attributes:
          hibench:

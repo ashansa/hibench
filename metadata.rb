@@ -7,6 +7,8 @@ version          "0.1"
 
 recipe            "hibench::install", "Experiment setup for hibench"
 recipe            "hibench::experiment",  "configFile=; Experiment name: experiment"
+recipe            "hibench::gendata", "generate data stream"
+recipe            "hibench::un-spark-streaming", "Run spark stream processing"
 
 
 depends "kagent"
