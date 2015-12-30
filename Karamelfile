@@ -5,11 +5,9 @@ dependencies:
       - hibench::install
   - recipe: hibench::gendata
     local:
-      - hibench::install
       - hibench::experiment
-  - recipe: hibench::gendata
+  - recipe: hibench::jobmanager-hadoop
     local:
-      - hibench::install
       - hibench::experiment
 
 
