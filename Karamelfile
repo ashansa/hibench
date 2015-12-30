@@ -5,8 +5,8 @@ dependencies:
       - hibench::install
   - recipe: hibench::gendata
     local:
-  	  - hibench::install
-  	  - hibench::experiment
+      - hibench::install
+      - hibench::experiment
   - recipe: hibench::run-spark-streaming
   	local:
   	  - hibench::install
