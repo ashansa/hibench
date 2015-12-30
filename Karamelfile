@@ -6,7 +6,7 @@ dependencies:
   - recipe: hibench::gendata
     local:
       - hibench::experiment
-  - recipe: hibench::jobmanager-hadoop
+  - recipe: hibench::run-spark-streaming
     local:
       - hibench::experiment
 
