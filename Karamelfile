@@ -6,9 +6,6 @@ dependencies:
   - recipe: hibench::gendata
     local:
       - hibench::experiment
-  - recipe: hibench::run-spark-streaming
-    local:
-      - hibench::experiment
 
 
 
