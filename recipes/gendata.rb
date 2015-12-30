@@ -5,6 +5,6 @@ script 'prepare' do
   interpreter "bash"
   code <<-EOM
   cd #{node[:hibench][:home]}
-  ./workloads/streamingbench/prepare/gendata.sh
+  ./workloads/streamingbench/prepare/gendata.sh & ./workloads/streamingbench/spark/bin/run.sh
   EOM
 end
