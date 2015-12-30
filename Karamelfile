@@ -9,8 +9,8 @@ dependencies:
       - hibench::experiment
   - recipe: hibench::run-spark-streaming
     local:
-      - hibench::install
-      - hibench::experiment
+    - hibench::install
+    - hibench::experiment
 
 
 
