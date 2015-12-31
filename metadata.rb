@@ -40,6 +40,10 @@ attribute "hibench/data/scale",
 :description => "can be tiny, small, large, huge, gigantic, bigdata",
 :type => "string"
 
+attribute "hibench/stream/runtime",
+:description => "runtime of streambench test in seconds",
+:type => "string"
+
 attribute "hadoop/home",
 :description => "path to hadoop home",
 :type => "string"
@@ -75,5 +79,6 @@ attribute "kafka/home",
 attribute "kafka/brokerList",
 :description => "kafka brokerList. Comma seperated host:port",
 :type => "string"
+
 
 
