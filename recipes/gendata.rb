@@ -5,6 +5,6 @@ script 'prepare' do
   interpreter "bash"
   code <<-EOM
   cd #{node[:hibench][:home]}
-  timeout #{node.hibench.timeout}s ./workloads/streamingbench/prepare/gendata.sh & timeout #{node.hibench.timeout}s ./workloads/streamingbench/spark/bin/run.sh
+  timeout #{node.hibench.stream.runtime}s ./workloads/streamingbench/prepare/gendata.sh & timeout #{node.hibench.stream.runtime}s ./workloads/streamingbench/spark/bin/run.sh
   EOM
 end
