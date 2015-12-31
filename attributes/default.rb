@@ -6,6 +6,7 @@ default[:hibench][:home] = "/tmp/HiBench"
 default[:hibench][:map][:parallelism] = "2"
 default[:hibench][:shuffle][:parallelism] = "1"
 default[:hibench][:data][:scale] = "tiny"
+default[:hibench][:timeout] = "360"
 
 
 default[:hadoop][:home] = "/srv/hadoop"
