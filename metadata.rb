@@ -68,6 +68,10 @@ attribute "spark/version",
 :description => "can be spark1.2 or spark1.3",
 :type => "string"
 
+attribute "flink/home",
+:description => "path to flink home",
+:type => "string"
+
 attribute "zookeeper/url",
 :description => "zookeeper url",
 :type => "string"
