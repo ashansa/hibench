@@ -18,6 +18,8 @@ default[:spark][:home] = "/srv/spark-1.3.1-bin-hadoop2.4"
 default[:spark][:master][:url] = "spark://172.28.128.5:7077"
 default[:spark][:version] = "spark1.3"
 
+default[:flink][:home] = "/srv/flink-0.10.1"
+
 default[:zookeeper][:url] = "127.0.0.1:2181"
 
 default[:kafka][:home] = "/opt/kafka-0.8.1.1"
