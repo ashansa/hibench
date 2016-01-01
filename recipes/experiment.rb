@@ -6,7 +6,7 @@ script 'run_experiment' do
   code <<-EOM
   cwd "/tmp/hibench"
   echo "$(date)" > /home/vagrant/time.txt
-  wget https://s3-eu-west-1.amazonaws.com/hibench-compiled-jar/HiBench-spark-1.3.zip
+  wget https://s3-eu-west-1.amazonaws.com/hibench-compiled-jar/HiBench-spark-1.4.zip
   echo "downloaded hibench"
   echo "$(date)" > /home/vagrant/time2.txt
   EOM
