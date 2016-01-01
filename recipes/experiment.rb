@@ -18,7 +18,7 @@ script 'unpack_hibench' do
   group node['hibench']['group']
   interpreter "bash"
   code <<-EOM
-unzip HiBench-spark-1.3.zip
+unzip HiBench-spark-1.4.zip
   EOM
 end
 
